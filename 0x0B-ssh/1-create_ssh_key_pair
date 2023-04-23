@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#creating a new value pair
+
+#setting the name of the private key file
+KEY_NAME="school"
+
+#set the number of key bits
+KEY_BITS=4096
+
+#setting the passphrase for the key
+PASSPHRASE="betty"
+
+#creating the key pair
+ssh-keygen -t rsa $KEY_BITS -f $KEY_NAME -N "$PASSPHRASE"
+
+#printing the fingerprint and the randome image
+ssh-keygen -lf $KEY_NAME
+
+#list the generated files
+ls -l $KEY_NAME $KEY_NAME.pub
