@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#installing the nginx server
+#ensurring the listening port is 80
+#curl used to write a GET request
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo ' Hello World!' > /var/www/html/index.html
+service nginx start
