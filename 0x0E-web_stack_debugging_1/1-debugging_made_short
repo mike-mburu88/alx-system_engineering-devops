@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #move to change port in Nginx
-
 cat  /etc/nginx/sites-available/default > /etc/nginx/sites-enabled/default
 service nginx restart
 rm /run/nginx.pid
