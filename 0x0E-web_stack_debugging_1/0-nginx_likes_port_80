@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-#rectification to have listen port 80 in Nginx web server
-
-cat /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
